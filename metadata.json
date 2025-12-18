@@ -1,6 +1,6 @@
 {
-  "name": "Ink & Insight: AI Storyteller",
-  "description": "A creative writing interface that transforms images into atmospheric story openings with AI-powered narration and interactive world-building chat.",
+  "name": "The Storyteller’s Forge",
+  "description": "An interactive, educational writing mentor that helps you build structured novels through collaborative AI storytelling and dynamic visualization.",
   "requestFramePermissions": [
     "camera"
   ]

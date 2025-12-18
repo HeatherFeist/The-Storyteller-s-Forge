@@ -17,6 +17,13 @@ export const STAGE_DESCRIPTIONS: Record<StoryStage, string> = {
   [StoryStage.RESOLUTION]: "The New Normal. The final conclusion where the world find its new equilibrium."
 };
 
+export interface StoryIdea {
+  id: string;
+  protagonist: string;
+  plotHook: string;
+  tone: string;
+}
+
 export interface Chapter {
   id: string;
   stage: StoryStage;
@@ -33,13 +40,12 @@ export interface Book {
 }
 
 export interface StoryState {
-  book: Book;
+  book: Book | null;
   isGenerating: boolean;
   isIllustrating: boolean;
   error: string | null;
 }
 
-// Interface for chat messages used in the Story Assistant
 export interface Message {
   role: 'user' | 'assistant';
   content: string;
